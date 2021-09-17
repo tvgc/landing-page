@@ -7,7 +7,12 @@
     border: 1px solid black;
 }
 
-ul {
+main {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -15,13 +20,67 @@ ul {
     gap: 10px;
 }
 
+img {
+    display: block;
+}
+
+/* ------------- COMMUNS FLEXBOX AND GRID -------------- */
+
 .flex-column-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.flex-column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    justify-content: center;
+ }
+
+.grid-template-rows {
+    display: grid;
+    grid-template-columns: 20% auto;
+ }
+
+ .flex-template-rows-space-evenly {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
+
+/* ----------- UNDER THE HEADER ------------- */
+
 input {
     width: 200px;
     margin: 0 auto;
 }
+
+form .submit-btn {
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* ----------- SECTIONS ------------- */
+
+section .div-img {
+    height: 100px;
+ }
+
+section > iframe {
+    margin: 0px auto;
+    display: block;
+ }
+
+.flex-template-rows-space-evenly > div {
+    width: 30%;
+    text-align: center;
+}
+ 
