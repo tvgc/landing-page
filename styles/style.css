@@ -1,5 +1,7 @@
 @charset "uft-08";
 
+/* ----------------------- GLOBAL ELEMENTS STYLING ------------------------- */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,7 +19,7 @@ img {
     display: block;
 }
 
-/* ------------- COMMUNS FLEXBOX AND GRID -------------- */
+/* ----------------------- GLOBAL CLASSES STYLING ------------------------- */
 
 .flex-row_direction-space_between {
     display: flex;
@@ -61,7 +63,7 @@ img {
     justify-content: end;
 }
 
-/* ------------ HEADER ------------ */
+/* ----------------------- HEADER ------------------------- */
 
 header {
     height: 4rem;
@@ -75,10 +77,20 @@ header li {
     padding: 0px 20px;
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    header .responsive-flex-column-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* voltar aqui  */
+     }
+}
+
 /* ----------------------- MAIN ------------------------- */
 
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0px auto;
 }
 
@@ -98,13 +110,13 @@ main .h1-title {
     text-align: center;
 }
 
-input {
+.first-section input {
     width: 15rem;
     height: 1.8rem;
     margin: 0 auto;
 }
 
-form .submit-btn {
+.first-section  form .submit-btn {
     width: 100px;
     margin: 0 auto;
 }
@@ -115,7 +127,7 @@ main .second-section {
     gap: 1.5rem
 }
 
-section .div-img {
+.second-section  .div-img {
     height: 100px;
  }
 
@@ -125,24 +137,47 @@ main .third-section {
     padding: 3rem;
 } 
 
-section > iframe {
+.third-section  > iframe {
     margin: 0px auto;
     display: block;
  }
 
 /* ----------- FOURTH SECTION ------------- */
 
-.div-sell {
+.fourth-section {
+    margin-bottom: 3rem;
+} 
+
+.fourth-section .div-sell {
     width: 30%;
     text-align: center;
 }
 
-.div-sell h3 {
+.fourth-section .div-sell h3 {
     padding: 1rem;
 }
 
-.div-sell h3 {
+.fourth-section .div-sell h2 {
     padding: 1rem;
+}
+
+.fourth-section .div-sell li {
+    padding: 0.2rem;
+}
+
+.fourth-section button {
+    padding: 0.5rem;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+/* ----------------------- FOOTER ------------------------- */
+
+footer li {
+    padding: 1rem;
+}
+
+footer span {
+    padding: 0rem 0.5rem 1rem 1rem;
 }
 
 
