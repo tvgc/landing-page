@@ -2,11 +2,19 @@
 
 /* ----------------------- GLOBAL ELEMENTS STYLING ------------------------- */
 
+:root {
+    --color-01: black;
+    --color-02: #14213d;
+    --color-03: #fca311;
+    --color-04: #e5e5e5;
+    --color-05: #ffffff;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     list-style: none;
     text-decoration: none;
 }
@@ -77,36 +85,11 @@ header li {
     padding: .5rem;
 }
 
-/* ------ RESPONSIVE ------ */
-
-@media (max-width: 600px) {
-
-    header {
-        height: auto;
-    }
-
-    header .responsive-flex-column-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-     }
-}
-
 /* ----------------------- MAIN ------------------------- */
 
 main {
     max-width: 1000px;
     margin: 0px auto;
-}
-
-/* ------ RESPONSIVE ------ */
-
-@media (max-width: 600px) {
-
-    main {
-        max-width: 1000px;
-        margin: 3rem auto 0rem auto;
-    }
 }
 
 /* ----------- FIRST SECTION (IT´S A DIV) ------------- */
@@ -126,7 +109,7 @@ main .h1-title {
 }
 
 .first-section input {
-    width: 15rem;
+    width: 14rem;
     height: 1.8rem;
     margin: 0 auto;
 }
@@ -146,22 +129,6 @@ main .second-section {
     height: 100px;
  }
 
- /* ------ RESPONSIVE ------ */
-
-@media (max-width: 600px) {
-    .div-img {
-        display: none;
-    }
-
-    .second-section .responsive-flex-column-center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-}
-
 /* ----------- THIRD SECTION ------------- */
 
 main .third-section {
@@ -173,15 +140,6 @@ main .third-section {
     display: block;
     max-width: 100%;
  }
-
-  /* ------ RESPONSIVE ------ */
-
-@media (max-width: 600px) {
-    main .third-section {
-        padding: 3rem 0rem;
-    }
-    
-}
 
 /* ----------- FOURTH SECTION ------------- */
 
@@ -211,6 +169,11 @@ main .third-section {
     margin: 2rem 0rem 1rem 0rem;
 }
 
+@media (max-width: 800px) {
+    
+    
+}
+
 /* ----------------------- FOOTER ------------------------- */
 
 footer li {
@@ -221,6 +184,88 @@ footer span {
     padding: 0rem 0.5rem 1rem 1rem;
 }
 
+/* ----------------------- RESPONSIVE ------------------------- */
 
-/* aparentemente finalizado o posisionamento da primeira div-section. Falta espaçar os elementos dentro dela depois espaçar os restantes dos containers pra baixo /*
+/* ------------ HEADER ------------ */
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+    }
+
+    header .responsive-flex-column-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ------------ MAIN ------------ */
+
+@media (max-width: 600px) {
+
+    main {
+        max-width: 1000px;
+        margin: 3rem auto 0rem auto;
+    }
+}
+
+/* ------ SECOND SECTION ------ */
+
+@media (max-width: 600px) {
+    .div-img {
+        display: none;
+    }
+
+    .second-section .responsive-flex-column-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+}
+
+/* ------ THIRD SECTION ------ */
+
+@media (max-width: 600px) {
+    main .third-section {
+        padding: 3rem 0rem;
+    }
+    
+}
  
+/* ------ FOURTH SECTION ------ */
+
+@media (max-width: 600px) {
+    main .fourth-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .fourth-section .div-sell {
+        width: 300px;
+    }
+}
+
+/* ------------ FOOTER ------------ */
+
+@media (max-width: 600px) {
+
+    footer .responsive-flex-column-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer li {
+        padding: 0.5rem;
+    }
+
+    footer .flex-template-rows-center {
+        justify-content: center;
+    }
+}
