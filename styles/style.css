@@ -66,25 +66,32 @@ img {
 header {
     height: 4rem;
     position: fixed;
+    top: 0;
     width: 100%;
     background-color: white;
-    margin-top: -2px;
 }
 
 header li {
     padding: 0px 20px;
 }
 
-/* ----------- SECTIONS ------------- */
+/* ----------------------- MAIN ------------------------- */
 
 main {
     max-width: 800px;
     margin: 0px auto;
 }
 
+/* ----------- FIRST SECTION (IT´S A DIV) ------------- */
+
 .first-section {
     margin-top: 6rem;
     margin-bottom: 3rem;
+    gap: 1.5rem;
+}
+
+.first-section form {
+    gap: 1.5rem;
 }
 
 main .h1-title {
@@ -92,7 +99,8 @@ main .h1-title {
 }
 
 input {
-    width: 200px;
+    width: 15rem;
+    height: 1.8rem;
     margin: 0 auto;
 }
 
@@ -101,20 +109,42 @@ form .submit-btn {
     margin: 0 auto;
 }
 
+/* ----------- SECOND SECTION ------------- */
+
+main .second-section {
+    gap: 1.5rem
+}
 
 section .div-img {
     height: 100px;
  }
+
+/* ----------- THIRD SECTION ------------- */
+
+main .third-section {
+    padding: 3rem;
+} 
 
 section > iframe {
     margin: 0px auto;
     display: block;
  }
 
-.flex-template-rows-space-evenly > .div-sell {
+/* ----------- FOURTH SECTION ------------- */
+
+.div-sell {
     width: 30%;
     text-align: center;
 }
+
+.div-sell h3 {
+    padding: 1rem;
+}
+
+.div-sell h3 {
+    padding: 1rem;
+}
+
 
 /* aparentemente finalizado o posisionamento da primeira div-section. Falta espaçar os elementos dentro dela depois espaçar os restantes dos containers pra baixo /*
  
