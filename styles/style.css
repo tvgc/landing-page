@@ -5,19 +5,12 @@
     padding: 0px;
     box-sizing: border-box;
     border: 1px solid black;
+    list-style: none;
+    text-decoration: none;
 }
 
-main {
-    max-width: 800px;
-    margin: 0px auto;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    justify-content: flex-end;
-    gap: 10px;
+body {
+    position: relative;
 }
 
 img {
@@ -25,6 +18,12 @@ img {
 }
 
 /* ------------- COMMUNS FLEXBOX AND GRID -------------- */
+
+.flex-row_direction-space_between {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
 
 .flex-column-center {
     display: flex;
@@ -50,13 +49,47 @@ img {
     grid-template-columns: 20% auto;
  }
 
- .flex-template-rows-space-evenly {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
+.flex-template-rows-space-evenly {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
  }
 
-/* ----------- UNDER THE HEADER ------------- */
+.flex-template-rows-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+/* ------------ HEADER ------------ */
+
+header {
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    margin-top: -2px;
+}
+
+header li {
+    padding: 0px 20px;
+}
+
+/* ----------- SECTIONS ------------- */
+
+main {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.first-section {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+main .h1-title {
+    text-align: center;
+}
 
 input {
     width: 200px;
@@ -68,7 +101,6 @@ form .submit-btn {
     margin: 0 auto;
 }
 
-/* ----------- SECTIONS ------------- */
 
 section .div-img {
     height: 100px;
@@ -79,8 +111,10 @@ section > iframe {
     display: block;
  }
 
-.flex-template-rows-space-evenly > div {
+.flex-template-rows-space-evenly > .div-sell {
     width: 30%;
     text-align: center;
 }
+
+/* aparentemente finalizado o posisionamento da primeira div-section. Falta espaçar os elementos dentro dela depois espaçar os restantes dos containers pra baixo /*
  

@@ -9,17 +9,17 @@
 </head>
 <body>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li class="li1">Features</li>
-                    <li class="li2">How It Works</li>
-                    <li class="li3">Pricing</li>
+        <header class="flex-column-center"> 
+            <nav> <!-- fazer NAV ser substituído pelos três traços quando houver a redução de width screen -->
+                <ul class="flex-row_direction-space_between">
+                    <li class="li1"><a href="#">Features</a></li>
+                    <li class="li2"><a href="#">How It Works</a></li>
+                    <li class="li3"><a href="#">Pricing</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="flex-column-center">
+            <div class="flex-column-center h1-title first-section">
                 <h1>Lorem ipsum dolor sit amet consectetur.</h1>
                 <form action="" class="flex-column-center">
                     <input type="text" placeholder="Enter your e-mail" class="input1">
@@ -59,7 +59,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/abMeK1QkCRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </section>
             <section class="flex-template-rows-space-evenly">
-                <div>
+                <div class="div-sell">
                     <h3>Lorem, ipsum.</h3>
                     <h2>lorem</h2>
                     <ul>
@@ -70,7 +70,7 @@
                     </ul>
                     <button>SELECT</button>
                 </div>
-                <div>
+                <div class="div-sell">
                     <h3>Lorem, ipsum.</h3>
                     <h2>lorem</h2>
                     <ul>
@@ -81,7 +81,7 @@
                     </ul>
                     <button>SELECT</button>
                 </div>
-                <div>
+                <div class="div-sell">
                     <h3>Lorem, ipsum.</h3>
                     <h2>lorem</h2>
                     <ul>
@@ -94,6 +94,14 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <ul class="flex-template-rows-end">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span class="flex-template-rows-end">Copyright2016, Original Tombones</span>
+        </footer>
     </body>
 </body>
 </html>
