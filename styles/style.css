@@ -14,7 +14,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-   /*  border: 1px solid black; */
+    /* border: 1px solid black; */
     list-style: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -79,6 +79,17 @@ header {
     background-color: var(--color-04);
 }
 
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header ul {
+    align-items: center;
+}
+
 header li {
     padding: .5rem 2rem;
 }
@@ -86,6 +97,17 @@ header li {
 header a {
     color: var(--color-02);
     font-weight: bolder;
+}
+
+header img {
+    display: block;
+    width: 50px;
+    align-items: center;
+}
+
+header .div-img {
+    width: 100px;
+    align-items: center;
 }
 
 /* ----------------------- MAIN ------------------------- */
