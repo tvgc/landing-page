@@ -14,17 +14,15 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+   /*  border: 1px solid black; */
     list-style: none;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     position: relative;
-}
-
-img {
-    display: block;
+    color: var(--color-02)
 }
 
 /* ----------------------- GLOBAL CLASSES STYLING ------------------------- */
@@ -82,7 +80,12 @@ header {
 }
 
 header li {
-    padding: .5rem;
+    padding: .5rem 2rem;
+}
+
+header a {
+    color: var(--color-02);
+    font-weight: bolder;
 }
 
 /* ----------------------- MAIN ------------------------- */
@@ -112,14 +115,23 @@ main .h1-title {
     width: 14rem;
     height: 1.8rem;
     margin: 0 auto;
+    padding: 5px;
+    font-size: 0.9rem;
 }
 
 .first-section  form .submit-btn {
     width: 8rem;
+    cursor: pointer;
+    border: transparent;
     background-color: var(--color-03);
     color: var(--color-01);
     font-size: 1.2rem;
     font-weight:bolder
+}
+
+.first-section .submit-btn:hover {
+    background-color: var(--color-02);
+    color: var(--color-05)
 }
 
 /* ----------- SECOND SECTION ------------- */
@@ -131,6 +143,11 @@ main .second-section {
 .second-section  .div-img {
     height: 100px;
  }
+
+.second-section i {
+    font-size: 3rem;
+    color: var(--color-03);
+}
 
 /* ----------- THIRD SECTION ------------- */
 
@@ -153,10 +170,13 @@ main .third-section {
 .fourth-section .div-sell {
     width: 30%;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
 .fourth-section .div-sell h3 {
     padding: 1rem;
+    background-color: var(--color-04);
 }
 
 .fourth-section .div-sell h2 {
@@ -170,6 +190,15 @@ main .third-section {
 .fourth-section button {
     padding: 0.5rem;
     margin: 2rem 0rem 1rem 0rem;
+    font-size: 1rem;
+    background-color: var(--color-03);
+    border: none;
+    cursor: pointer;
+}
+
+.fourth-section button:hover {
+    background-color: var(--color-02);
+    color: var(--color-05)
 }
 
 /* ----------------------- FOOTER ------------------------- */
@@ -180,10 +209,15 @@ footer {
 
 footer li {
     padding: 1rem;
+    font-weight: bolder;
 }
 
 footer span {
     padding: 0rem 0.5rem 1rem 1rem;
+}
+
+footer a {
+    color: var(--color-02);
 }
 
 /* ----------------------- RESPONSIVE ------------------------- */

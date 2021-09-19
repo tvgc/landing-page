@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/all.min.css" integrity="sha512-9my9Mb2+0YO+I4PUCSwUYO7sEK21Y0STBAiFEYoWtd2VzLEZZ4QARDrZ30hdM1GlioHJ8o8cWQiy8IAb1hy/Hg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <body>
-        <header class="flex-column-center"> 
-            <nav> <!-- fazer NAV ser substituído pelos três traços quando houver a redução de width screen -->
+        <header class="flex-column-center" id="header"> 
+            <nav id="nav-bar">
                 <ul class="flex-row_direction-space_between responsive-flex-column-center">
-                    <li class="li1"><a href="#">Features</a></li>
-                    <li class="li2"><a href="#">How It Works</a></li>
-                    <li class="li3"><a href="#">Pricing</a></li>
+                    <li class="nav-link"><a href="#">Features</a></li>
+                    <li class="nav-link"><a href="#">How It Works</a></li>
+                    <li class="nav-link"><a href="#">Pricing</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,7 +30,7 @@
             <section class="flex-column-center second-section">
                 <div class="grid-template-rows responsive-flex-column-center">
                     <div class="flex-center-center div-img">
-                        <img src="images/x.png" alt="x" width="50px">
+                        <i class="fab fa-hotjar"></i>
                     </div>
                     <div class="flex-column-left">
                         <h2>Lorem, ipsum.</h2>
@@ -38,7 +39,7 @@
                 </div>
                 <div class="grid-template-rows responsive-flex-column-center">
                     <div class="flex-center-center div-img">
-                        <img src="images/x.png" alt="x" width="50px">
+                        <i class="fas fa-truck-moving"></i>
                     </div>
                     <div class="flex-column-left">
                         <h2>Lorem, ipsum.</h2>
@@ -47,7 +48,7 @@
                 </div>
                 <div class="grid-template-rows responsive-flex-column-center">
                     <div class="flex-center-center div-img">
-                        <img src="images/x.png" alt="x" width="50px">
+                        <i class="fas fa-thermometer-full"></i>
                     </div>
                     <div class="flex-column-left">
                         <h2>Lorem, ipsum.</h2>
